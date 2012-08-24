@@ -194,7 +194,5 @@ $(document).ready(function(){
     $('#canvas-wrap').append('<canvas id="c" width="'+w+'" height="'+h+'"></canvas>');
     
     var mgr = new MGR(document.getElementById("c"), w, h, 10);
-    
-    $('#b').click(function(){mgr.kill();});
 });
 ​
