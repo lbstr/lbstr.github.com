@@ -195,4 +195,3 @@ $(document).ready(function(){
     
     var mgr = new MGR(document.getElementById("c"), w, h, 10);
 });
-​
