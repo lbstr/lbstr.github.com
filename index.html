@@ -1,22 +1,233 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>lbstr (Jared Barnett)</title>
-		<meta charset="utf-8">
+		<title>Jared Barnett</title>
 		<style>
-			#canvas-wrap, body { margin: 0; padding: 0; background-color: black; }
-			#cp { position: fixed; bottom: 0; right: 0;  border: 1px solid #444; color: #666; font-size: 10px; font-weight: bold; font-family: helvitica; -webkit-border-top-left-radius: 5px;
--moz-border-radius-topleft: 5px;
-border-top-left-radius: 5px; border-right: none; border-bottom: none; }
-			#cp:hover { border-color: #457; }
-			#cp a { color: #666; text-decoration: none; padding: 2px 5px 5px; display: inline-block;}
-			#cp a:hover { color: #48c; }
+
+
+			body { 
+				background: #f1f3f3 url(bg.png) repeat fixed; 
+				margin: 0;
+				padding: 0;
+			}
+			h1, h2, h3, h4, h5, h6, div, span, a { 
+				font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+			}
+			.card { 
+				text-align: center; 
+				position: fixed; 
+				top: 0; 
+				left: 0; 
+				z-index: 1; 
+				width: 100%; 
+				color: #444; 
+				font-size: 1em;
+			}
+			h1 { 
+				text-shadow: 1px 1px 0 #fff; 
+				margin: 50px 0 0; 
+			}
+			a, a:visited, a:active, a:link {
+				color: #4183C4;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+				color: #26b;
+			}
+
+			.resume { 
+				position: relative; 
+				margin: 270px auto 80px; 
+				z-index: 2;  
+				padding: 50px 5%; 
+				background-color: #f7f9f9; 
+				box-shadow:0 0 20px 0 #ddd; 
+			}
+
+			h2 {
+				border-bottom: 1px solid #ddd;
+				padding: 0 0 5px;
+				margin: 20px 0; 
+			}
+
+			.head {
+				display: none; /* this might get added if i add more sections other than resume */
+				position: absolute; 
+				top: 0;
+				left: 0;
+				width: 100%;
+			}
+
+			.head a {
+				color: white; 
+				margin: 0; 
+				padding: 10px; 
+				background-color: #39f;
+				border: none;
+				font-size: 15px;
+				font-weight: bold;
+				display: block;
+			}
+
+			h4 {
+				margin: 0; 
+				padding: 0 150px 0 0; 
+			}
+
+			.resume .sec {
+				margin-left: 5%;
+				margin-bottom: 40px;
+			}
+
+			.sec .item { 
+				position: relative; 
+				margin-bottom: 30px; 
+			}
+
+			.topright {
+				position: absolute; 
+				top: 0;
+				right: 0;
+			}
+
+			.faint {
+				font-size: 11px;
+				color: #666;
+			}
+
+			.sm {
+				font-size: 80%;
+				margin: 0;
+				padding: 0;
+			}
+
+			.in { 
+				margin-left: 2%;
+				margin-right: 2%;
+			}
+
+			.footer {
+				position: fixed; 
+				bottom: 20px;
+				left: 0;
+				z-index: 1;
+				width: 100%;
+				text-align: center;
+			}
+
+
+			@media screen and (max-width: 960px) {
+				h1 { 
+					font-size: 3.5em; 
+				}
+				.resume { 
+					width: 90%; 
+					padding-top:30px; 
+					padding-bottom:30px; 
+				}
+			}
+			@media screen and (max-width: 640px) {
+				h1 { 
+					font-size: 3em; 
+					margin-top: 25px; 
+				}
+				.resume { 
+					margin-top:200px; 
+					padding-top:20px; 
+					padding-bottom:20px; 
+				}
+			}
+			@media screen and (max-width: 320px) {
+				h1 { 
+					font-size: 2.5em; 
+					margin-top: 20px; 
+				}
+				.resume { 
+					margin-top:175px; 
+					padding-top:1px; 
+					padding-bottom:1px; 
+				}
+			}
+			@media screen and (min-width: 960px) {
+				h1 { 
+					font-size: 4em; 
+				}
+				.resume { 
+					width: 840px; 
+				}
+			}
 		</style>
 	</head>
 	<body>
-		<div id="canvas-wrap"></div>
-		<aside id="cp"><a href="http://jaredbarnett.com">jb 2012</a></aside>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
-		<script type="text/javascript" src="./js.js"></script>
+		<header class="card">
+			<h1>Jared Barnett</h1>
+			<div>2290 Grove Circle East</div>
+			<div>Boulder, CO, 80302</div>
+			<div><a href="mailto:jmwbarnett@gmail.com">jmwbarnett@gmail.com</a></div>
+			<div><a href="http://www.jaredbarnett.com">www.jaredbarnett.com</a></div>
+		</header>
+
+
+		<div class="resume">
+
+			<header id="resume" class="head">
+				<a href="#resume">R&eacute;sum&eacute;</a>
+			</header> 
+
+			<h2>Objective</h2>
+			<section class="sec">
+				<p>To attain a software development position at a company that shares my enthusiasm for performance, maintainability and research.</p>
+			</section>
+
+			<h2>Education</h2>
+			<section class="sec">
+				<div class="item">
+					<h4>University of Colorado at Boulder</h4>
+					<p class="sm">B.S. Computer Science</p>
+					<div class="topright faint">Fall 2006 &ndash; Spring 2011</div>
+				</div>
+			</section>
+
+			<h2>Experience</h2>
+			<section class="sec">
+				<div class="item">
+					<h4>Markit On Demand</h4>
+					<p class="sm">Web Developer</p>
+					<div class="topright faint">June 2011 &ndash; Present</div>
+					<p class="in">I write complex web applications for clients in the financial services sector. Taking pdf prototypes from the design team, I am able to build pages with browser compatibility in mind. I write server-side code in C# .NET and on the client-side, I write javascript with help from jQuery. Our sites and APIs receive a massive amount of traffic, so performance is always a major focal point of mine. I take pride in writing clean code that makes it possible to aggregate and present the most complex of financial data. </p>
+				</div>
+				<div class="item">
+					<h4>Leeds School of Business</h4>
+					<p class="sm">Web Developer</p>
+					<div class="topright faint">May 2010 &ndash; May 2011</div>
+					<p class="in">Replaced existing .NET CMS with a Symfony (PHP) CMS. I was the only developer and worked very closely with an excellent designer. I implemented a database schema that allowed for complete coverage of Leeds entities including events, news, publications, people, videos, offices and more. I wrote a custom search with live AJAX results, giving users an additional, modern means of navigation. I also developed an secure backend interface that made it fast and easy for staff to add, edit and delete content. This is a highly visible site and is still live at <a href="http://leeds.colorado.edu">leeds.colorado.edu</a>. </p>
+				</div>
+				<div class="item">
+					<h4>Senior Project</h4>
+					<p class="sm">NASA JPL</p>
+					<div class="topright faint">August 2009 &ndash; May 2010</div>
+					<p class="in">Transitioned spacecraft simulation software from a cryptic language understood by few to a web application that produces Java, giving JPL a wider range of programmers that can understand and implement the simulations. </p>
+				</div>
+			</section>
+
+			<h2>Other Interests</h2>
+			<section class="sec">
+				<div class="item">
+					<p class="in">Piano, music production, jazz, hip hop, funk, basketball, football, golf, snowboarding, dirt jumping, camping, rubik's cubes and family</p>
+				</div>
+			</section>
+
+			<h2>Summary of Qualifications</h2>
+			<section class="sec">
+				<div class="item">
+					<p class="in">Thrive in team situations, passionate problem-solver, well-versed in Linux, MVC architecture, SVN and git source control, C# .NET, PHP, HTML, CSS, Javascript, AJAX, jQuery, Symfony, Doctrine, IIS and Apache.</p>
+				</div>
+			</section>
+
+		</div>
+		<footer class="footer">
+			<p class="faint">Created in 2012 by Jared Barnett</p>
+		</footer>
 	</body>
 </html>
