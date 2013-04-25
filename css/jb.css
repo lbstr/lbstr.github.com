@@ -32,7 +32,14 @@ a:hover {
 	text-decoration: underline;
 	color: #26b;
 }
-
+a:active {
+	position:relative;
+	top:1px;
+}
+abbr {
+	border-bottom: 1px dashed #b5b5b1;
+	cursor: default;
+}
 .resume { 
 	position: relative; 
 	margin: 270px auto 80px; 
