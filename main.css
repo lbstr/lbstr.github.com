@@ -1,0 +1,125 @@
+body {
+  background-color: #212529;
+  color: #e9f0f2;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.h1,
+.about,
+.links {
+  text-align: center;
+}
+
+.h1 {
+  margin: 2em 0 0;
+  font-size: 5em;
+}
+
+.about {
+  margin: 5em 0;
+  font-size: 1.4em;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  display: inline-block;
+  margin: 0 32px;
+}
+
+.link a {
+  display: inline-block;
+}
+
+.link a img {
+  width: 64px;
+  height: 64px;
+}
+
+.github-link {
+  background: transparent url(github.png) 0 0;
+}
+
+.twitter-link {
+  background: transparent url(twitter.png) 0 0;
+}
+
+.linkedin-link {
+  background: transparent url(linkedin.png) 0 0;
+}
+
+.sr-only {
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  width: 1px; 
+  margin: -1px; 
+  padding: 0; 
+  border: 0; 
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 4em;
+  }
+
+  .about {
+    font-size: 1.2em;
+  }
+
+  .link {
+    margin: 0 24px;
+  }
+
+  .link a img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 3em;
+  }
+
+  .about {
+    font-size: 1em;
+  }
+
+  .link {
+    margin: 0 20px;
+  }
+
+  .link a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 368px) {
+  .h1 {
+    font-size: 2em;
+  }
+
+  .about {
+    font-size: 0.8em;
+  }
+
+  .link {
+    margin: 0 16px;
+  }
+
+  .link a img {
+    width: 32px;
+    height: 32px;
+  }
+}
