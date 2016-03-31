@@ -87,11 +87,6 @@ function DescriptionController($timeout, $q, messageService) {
   }
 }
 
-
-
-
-
-
 angular
   .module('app')
   .factory('messageService', messageService);
@@ -107,13 +102,31 @@ function messageService(){
   
   function getAll() {
     return [
-      'cheeseburgers',
-      'pizza',
-      'anything from Wendy\'s',
-      'bacon',
-      'scrambled eggs',
-      'fried rice',
-      'fried anything'
+      'Software Engineer',
+      'Software Engineer',
+      'Software Engineer',
+      'From: Boulder, CO',
+      'Grew up in: Mattapoisett, MA',
+      'Hobbies: golf',
+      'Hobbies: running',
+      'Hobbies: snowboarding',
+      'Favorite movies: Wet Hot American Summer',
+      'Favorite movies: Django Unchained',
+      'Favorite movies: Kill Bill Vol. 1',
+      'Favorite movies: Kill Bill Vol. 2',
+      'Education: University of Colorado at Boulder',
+      'Education: B.S. Computer Science',
+      'Work Experience: check my LinkedIn below',
+      'Brace for a bad joke.',
+      'Brace for a bad joke..',
+      'Where are average items made?',
+      'Where are average items made??',
+      'Where are average items made???',
+      'The satisfactory.',
+      'The satisfactory..',
+      'The satisfactory...',
+      ':/',
+      'I\'m a...'
     ];
   }
   
